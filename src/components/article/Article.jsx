@@ -1,12 +1,14 @@
 import React from 'react';
 import './article.css';
 
-function Article() {
+const Article = ({imgUrl}) => {
     return (
-        <div>
-            <h1>Article</h1>
+        <div className='gpt3__blog-container_article'>
+            <div className="gpt3__blog-container_article-image">
+                <img src={imgUrl} alt="blog image" />
+            </div>
         </div>
-    )
-}
+    );
+};
 
 export default Article
